@@ -26,7 +26,7 @@
 + (instancetype)viewControllerWithClassNamedNib;
 
 //构造函数
-+ (instancetype)viewControllerWithClassNamedNib;
++ (instancetype)viewControllerOfClassNamedNib;
 
 //构造函数
 + (instancetype)viewControllerOfClassNameNibWithBundleName:(NSString *)strBundleName;

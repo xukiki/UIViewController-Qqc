@@ -46,7 +46,7 @@
 }
 
 //构造函数
-+ (instancetype)viewControllerWithClassNamedNib
++ (instancetype)viewControllerOfClassNamedNib
 {
     return [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
 }
