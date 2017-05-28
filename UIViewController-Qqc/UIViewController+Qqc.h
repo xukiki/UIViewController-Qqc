@@ -25,6 +25,12 @@
  */
 + (instancetype)viewControllerWithClassNamedNib;
 
+//构造函数
++ (instancetype)viewControllerWithClassNamedNib;
+
+//构造函数
++ (instancetype)viewControllerOfClassNameNibWithBundleName:(NSString *)strBundleName;
+
 /**
  *  根据键盘移动view的位置
  *

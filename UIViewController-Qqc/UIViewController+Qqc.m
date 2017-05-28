@@ -45,6 +45,19 @@
     return [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
 }
 
+//构造函数
++ (instancetype)viewControllerWithClassNamedNib
+{
+    return [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:nil];
+}
+
+//构造函数
++ (instancetype)viewControllerOfClassNameNibWithBundleName:(NSString *)strBundleName
+{
+    NSBundle* bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:strBundleName ofType:@"bundle"]];
+    return [[self alloc] initWithNibName:NSStringFromClass([self class]) bundle:bundle];
+}
+
 /**
  *  根据键盘移动view的位置
  *
