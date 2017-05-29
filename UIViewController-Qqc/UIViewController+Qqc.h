@@ -40,4 +40,7 @@
  */
 - (void)moveView:(UIView *)view forKeyboardNotification:(NSNotification*)notification up:(BOOL)up;
 
+//自定义返回按钮
+- (void)customBackButtonWithImage:(NSString*)strImage;
+
 @end

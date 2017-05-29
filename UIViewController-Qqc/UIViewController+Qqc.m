@@ -88,4 +88,19 @@
     [UIView commitAnimations];
 }
 
+//自定义返回按钮
+- (void)customBackButtonWithImage:(NSString*)strImage
+{
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithTitle:@""
+                                                                style:UIBarButtonItemStylePlain
+                                                               target:nil
+                                                               action:nil];
+    self.navigationController.navigationBar.tintColor =
+    [UIColor colorWithRed:1 green:1 blue:1 alpha:1.00];
+    //主要是以下两个图片设置
+    self.navigationController.navigationBar.backIndicatorImage = [UIImage imageNamed:strImage];
+    self.navigationController.navigationBar.backIndicatorTransitionMaskImage = [UIImage imageNamed:strImage];
+    self.navigationItem.backBarButtonItem = backItem;
+}
+
 @end
